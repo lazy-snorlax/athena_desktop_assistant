@@ -1,0 +1,5 @@
+[1025/165341.987:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1025/165341.991:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Anthony\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\d1c0fb9e-8940-4fd0-bbde-2d113aa1985a: The system cannot find the path specified. (0x3)
+[1025/165341.993:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Anthony\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\bca73c52-e7b0-488b-a724-8433ce66de27: The system cannot find the path specified. (0x3)
+[1025/165341.994:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Anthony\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\9ba24496-9094-4613-b8d5-b5aadc54f5fd: The system cannot find the path specified. (0x3)
+[1025/165341.996:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Anthony\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\dfc29537-05d4-48de-83b7-ad51877bd83d: The system cannot find the path specified. (0x3)
