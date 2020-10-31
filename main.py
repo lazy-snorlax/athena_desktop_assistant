@@ -6,6 +6,8 @@ import random
 import os
 from gtts import gTTS
 from time import ctime
+from datetime import datetime
+from datetime import date
 
 r = sr.Recognizer()
 
@@ -37,8 +39,28 @@ def respond(voice_data):
     if 'what is your name' in voice_data:
         speak('My name is Athena')
 
+    if 'what\'s your name' in voice_data:
+        speak('My name is Athena')
+
     if 'what time is it' in voice_data:
-        speak(ctime())
+        now = datetime.now()
+        current_time = now.strftime("%H:%M:%S")
+        speak(current_time)
+
+    if 'what\'s the time' in voice_data:
+        now = datetime.now()
+        current_time = now.strftime("%H:%M:%S")
+        speak(current_time)
+    
+    if 'what is the date today' in voice_data:
+        today = date.today()
+        d1 = today.strftime("%B %d %Y")
+        speak(d1)
+    
+    if 'what\'s today\'s date' in voice_data:
+        today = date.today()
+        d1 = today.strftime("%B %d %Y")
+        speak(d1)
 
     if 'search' in voice_data:
         search = record_audio('What do you want to search for?')
@@ -52,6 +74,12 @@ def respond(voice_data):
         webbrowser.get().open(url)
         speak('Here is the location of ' + location)
     
+    if 'thank you' in voice_data:
+        speak('Your welcome')
+    
+    if 'thanks' in voice_data:
+        speak('Your welcome')
+
     if 'goodbye' in voice_data:
         speak('Goodbye')
         exit()
